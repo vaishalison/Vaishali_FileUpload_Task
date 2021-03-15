@@ -1,0 +1,33 @@
+<div id="contact" class="container">
+    <h3 class="text-center">Assesment: File Upload</h3>
+    <div class="row">
+      
+      <div class="col-md-5">
+        <h3>Active</h3>
+        <p> 
+          <b>Upload File</b> (only .jpg, .jpeg, .png, .doc, .docx<br> format and max file size is 2MB).
+        </p>
+                
+        <p class="dashed"> <i class="fa fa-cloud-upload"></i>Drop files to attach, or 
+          <label for="file_input_id" style="color:#82d8ff">Browse</label>
+          <input type="file"  id="file_input_id" (change)="selectedFile($event)"/>
+        </p>
+
+        <div class="card" style="width: 18rem;">
+          <div class="card-body" *ngFor="let a of fileNames;let i=index" >
+            <div *ngIf="show">
+              <label>{{a}} </label><span style="float:right;cursor:pointer" (click)="closeFunc(a)">x</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="row">
+            <h3>Disabled</h3>
+            <input type="file"  id="file_input_id"/>
+            <p class="dashed">
+              <i class="fa fa-cloud-upload"></i> Drop files to attach, or <label for="file_input_id" style="color:#82d8ff">Browse</label>
+            </p>
+          </div>
+      </div>
+    </div>

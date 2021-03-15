@@ -1,0 +1,25 @@
+.dashed 
+{
+    border-style: dashed;
+    border-color:beige;
+    width: 322px;
+    height: 40px;
+    text-align: center;
+}
+ /* .container
+{ 
+    margin-top: 100px;
+
+}  */
+a{
+    text-decoration: none;
+}
+.text-center {
+    margin-bottom: 100px;
+} 
+.i{
+    color: #82d8ff;
+}
+#file_input_id{
+    display:none;
+  }
